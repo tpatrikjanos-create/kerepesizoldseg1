@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kerepesi Zöldség | Online szupermarket - Minőségi online bevásárlás</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          background: '#000000',
+          foreground: '#f2f4f4',
+          card: '#1c2529',
+          primary: '#2f7d3b',
+          secondary: '#185729',
+          muted: '#9ca4a9',
+          accent: '#ddf4de',
+          coral: '#e16e64',
+          mustard: '#f8ec88',
+          yellow: '#ffe55a',
+        },
+        fontFamily: { sans: ['Inter', 'sans-serif'] },
+      }
+    }
+  }
+</script>
+<style>
+  body { background:#000; color:#f2f4f4; font-family:'Inter',sans-serif; }
+  .noscroll::-webkit-scrollbar{ display:none; }
+  .noscroll{ scrollbar-width:none; }
+</style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+<!-- HEADER -->
+<div class="sticky top-0 z-50 bg-black">
+  <div class="flex items-center justify-between gap-4 bg-card px-6 py-3 text-sm">
+    <p class="max-w-[900px]">Minden nap friss árut hozunk a helyi termelőktől – nézd meg a mai szezonális válogatásunkat!</p>
+    <button class="shrink-0 rounded-full bg-foreground px-4 py-1.5 text-xs font-semibold text-black">Részletek</button>
+  </div>
+  <div class="flex flex-wrap items-center justify-center gap-5 bg-primary px-4 py-1.5 text-xs font-medium text-white">
+    <span class="font-bold">Xtra</span>
+    <span>🚚 Mindig ingyenes kiszállítás</span>
+    <span>10% kedvezmény sajátmárkás és BIO termékekre</span>
+    <span>4× kisértékű rendelés (1 Ft-tól)</span>
+    <a href="#" class="underline">Próbáld ki az Xtrát!</a>
+  </div>
+  <div class="flex flex-wrap items-center gap-5 px-6 py-3">
+    <a href="#" class="flex items-center gap-1 text-xl font-extrabold text-primary">Kerepesi <span class="text-xs font-normal text-muted">Zöldség</span></a>
+    <button class="flex items-center gap-1.5 rounded-lg border border-white/10 px-3 py-1.5 text-sm">
+      <span>🚚</span>
+      <span class="flex flex-col text-left leading-tight">
+        <span class="text-muted">Kínálatunk ide: Budapest K...</span>
+        <span class="font-semibold text-accent">Pontos cím megadása</span>
+      </span>
+    </button>
+    <form class="flex flex-1 max-w-[640px] items-stretch min-w-[200px]">
+      <input type="search" placeholder="Név, kategória vagy recept keresése" class="h-10 flex-1 rounded-l-lg border border-white/10 bg-black px-4 text-sm placeholder:text-muted focus:outline-none" />
+      <button type="button" class="flex h-10 w-12 items-center justify-center rounded-r-lg bg-accent text-secondary">🔍</button>
+    </form>
+    <button class="flex items-center gap-1 text-sm">🇭🇺</button>
+    <button class="flex items-center gap-1.5 rounded-full bg-card px-4 py-2 text-sm font-medium">👤 Bejelentkezés</button>
+    <button class="flex items-center gap-1.5 text-sm font-medium">🛒 Kosár</button>
+  </div>
+  <nav class="flex flex-wrap items-center gap-5 px-6 pb-3 text-sm font-medium">
+    <a href="#" class="rounded-full bg-primary px-4 py-1.5 text-white">Zöldségek</a>
+    <a href="#" class="hover:text-accent">Gyümölcsök</a>
+    <a href="#" class="hover:text-accent">Szezonális válogatás</a>
+    <a href="#" class="hover:text-accent">Bio zöldség-gyümölcs</a>
+    <a href="#" class="hover:text-accent">Receptek</a>
+  </nav>
+</div>
+
+<main class="flex-1">
+
+  <!-- HERO -->
+  <section class="relative mx-auto mb-10 max-w-[1760px] overflow-hidden rounded-2xl bg-secondary px-[3%] py-10 xl:px-10">
+    <div class="relative z-10 max-w-[640px]">
+      <h1 class="text-4xl font-extrabold text-white sm:text-5xl">Frissen szedett zöldség és gyümölcs <span class="text-mustard">akár 90 perc alatt!</span></h1>
+      <p class="mt-3 text-lg text-white/90">Ingyenes szállítás az első vásárlásnál 12 000 Ft felett.</p>
+      <div class="mt-8 flex flex-wrap gap-8">
+        <div class="flex items-start gap-2 max-w-[220px]"><span class="text-2xl">🌱</span><div><p class="font-semibold text-white">Termelőtől közvetlenül</p><p class="text-sm text-white/80">Helyi gazdáktól, naponta frissen</p></div></div>
+        <div class="flex items-start gap-2 max-w-[220px]"><span class="text-2xl">🌿</span><div><p class="font-semibold text-white">100% elégedettségi garancia</p><p class="text-sm text-white/80">Nem tetszett? Visszaadjuk a pénzt!</p></div></div>
+        <div class="flex items-start gap-2 max-w-[220px]"><span class="text-2xl">🏆</span><div><p class="font-semibold text-white">Piacvezető</p><p class="text-sm text-white/80">Top1 online zöldséges</p></div></div>
+        <div class="flex items-center gap-1 text-white">⭐ <span class="font-semibold">5.0/5</span><span class="text-white/80">(33 409+)</span></div>
+      </div>
+    </div>
+    <div class="pointer-events-none absolute bottom-0 right-0 hidden w-[300px] text-[180px] leading-none md:block">🥬</div>
+  </section>
+
+  <!-- CATEGORY GRID -->
+  <section class="mx-auto mb-10 max-w-[1760px] px-[3%] xl:px-10">
+    <h2 class="mb-3 text-2xl font-bold">Zöldség és gyümölcs kategóriák</h2>
+    <div class="grid grid-cols-3 gap-3 sm:grid-cols-6 md:grid-cols-9">
+      <!-- generated by JS below -->
+    </div>
+  </section>
+
+  <div id="carousels"></div>
+
+  <!-- STATS -->
+  <section class="mx-auto mb-10 max-w-[1760px] px-[3%] xl:px-10">
+    <div class="rounded-2xl bg-secondary p-10 text-center">
+      <h2 class="text-3xl font-extrabold text-white">Több mint <span class="text-mustard">500 000</span> elégedett vásárló</h2>
+      <p class="mt-2 text-white/80">Csatlakozz Magyarország vezető online zöldség-gyümölcs szaküzletéhez.</p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="mx-auto mb-10 max-w-[1760px] px-[3%] xl:px-10">
+    <h2 class="mb-3 text-2xl font-bold">Mitől különleges a Kerepesi Zöldség</h2>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      <div class="rounded-xl bg-card p-4"><span class="text-3xl">🥦</span><p class="mt-2 font-semibold">Friss, minőségi zöldség-gyümölcs</p><p class="mt-1 text-sm text-muted">Termelőktől közvetlenül hozzád.</p></div>
+      <div class="rounded-xl bg-card p-4"><span class="text-3xl">🚚</span><p class="mt-2 font-semibold">Gyors kiszállítás</p><p class="mt-1 text-sm text-muted">Akár 90 perc alatt az ajtódnál.</p></div>
+      <div class="rounded-xl bg-card p-4"><span class="text-3xl">✅</span><p class="mt-2 font-semibold">Elégedettségi garancia</p><p class="mt-1 text-sm text-muted">Nem tetszett? Visszaadjuk a pénzt.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="mt-10 border-t border-white/10 bg-card px-[3%] py-10 xl:px-10">
+  <div class="mx-auto grid max-w-[1760px] grid-cols-2 gap-6 sm:grid-cols-4">
+    <div>
+      <a href="#" class="text-xl font-extrabold text-primary">Kerepesi <span class="text-xs font-normal text-muted">Zöldség</span></a>
+      <p class="mt-2 text-sm text-muted">Online szupermarket – friss termékek akár 90 perc alatt.</p>
+    </div>
+    <div><p class="mb-2 font-semibold">Kerepesi Zöldség</p><ul class="space-y-1.5 text-sm text-muted"><li>Rólunk</li><li>Karrier</li><li>Sajtószoba</li><li>Blog</li><li>Kerepesi Séf</li></ul></div>
+    <div><p class="mb-2 font-semibold">Vásárlóknak</p><ul class="space-y-1.5 text-sm text-muted"><li>Kapcsolat</li><li>GYIK</li><li>Szállítási információk</li><li>ÁSZF</li><li>Adatvédelem</li></ul></div>
+    <div><p class="mb-2 font-semibold">Kövess minket</p><ul class="space-y-1.5 text-sm text-muted"><li>Facebook</li><li>Instagram</li><li>TikTok</li><li>YouTube</li></ul></div>
+  </div>
+  <p class="mx-auto mt-10 max-w-[1760px] text-xs text-muted">© 2026 Kerepesi Zöldség. Minden jog fenntartva.</p>
+</footer>
+
+<script>
+const categories = ["Levélzöldségek","Gyökérzöldségek","Paradicsomfélék","Hagymafélék","Gombák","Fűszernövények","Almafélék","Citrusfélék","Bogyós gyümölcsök","Csonthéjas gyümölcsök","Egzotikus gyümölcsök","Dinnyefélék","Saláták","Bio zöldség","Bio gyümölcs","Előkészített zöldség","Gyümölcslevek","Szezonális válogatás"];
+document.querySelector('.grid.grid-cols-3').innerHTML = categories.map(c => `
+  <a href="#" class="flex flex-col items-center gap-1.5 rounded-xl bg-card p-3 text-center text-xs font-medium hover:bg-accent hover:text-secondary">
+    <span class="flex size-12 items-center justify-center rounded-full bg-secondary text-lg">🥕</span>${c}
+  </a>`).join('');
+
+const carouselData = [
+  { title: "Legkedveltebb zöldségek", items: [
+    ["🥒","Magyar kígyóuborka","250 g","1089.2 Ft/kg","272 Ft"],
+    ["🥕","Magyar sárgarépa","1 kg","399 Ft/kg","399 Ft"],
+    ["🍅","Cherry paradicsom","250 g","1596 Ft/kg","399 Ft"],
+    ["🥔","Magyar burgonya","2 kg","299 Ft/kg","598 Ft"],
+    ["🧅","Vöröshagyma","1 kg","249 Ft/kg","249 Ft"],
+    ["🫑","Kaliforniai paprika","500 g","998 Ft/kg","499 Ft"],
+  ]},
+  { title: "Legkedveltebb gyümölcsök", items: [
+    ["🍌","Prémium minőségű banán","kb. 1 kg","333 Ft/kg","333 Ft"],
+    ["🍉","Görögdinnye","kb. 5 kg","199 Ft/kg","995 Ft"],
+    ["🥑","Avokádó","db","599 Ft/db","599 Ft"],
+    ["🍎","Magyar Jonagold Alma","1 kg","449 Ft/kg","449 Ft"],
+    ["🍇","Fürtös szőlő","500 g","1398 Ft/kg","699 Ft"],
+    ["🍑","Sárgabarack","500 g","1598 Ft/kg","799 Ft"],
+  ]},
+  { title: "Bio zöldség és gyümölcs", items: [
+    ["🥬","Bio fejes saláta","db","499 Ft/db","499 Ft"],
+    ["🥦","Bio brokkoli","500 g","1398 Ft/kg","699 Ft"],
+    ["🍓","Bio szamóca","250 g","2396 Ft/kg","599 Ft"],
+    ["🍋","Bio citrom","500 g","1398 Ft/kg","699 Ft"],
+    ["🥝","Bio kivi","4 db","250 Ft/db","999 Ft"],
+    ["🫐","Bio áfonya","125 g","3992 Ft/kg","499 Ft"],
+  ]},
+  { title: "Szezonális válogatás", items: [
+    ["🍒","Magyar meggy","500 g","1798 Ft/kg","899 Ft"],
+    ["🌽","Csemegekukorica","db","199 Ft/db","199 Ft"],
+    ["🍈","Sárgadinnye","kb. 1.5 kg","499 Ft/kg","749 Ft"],
+    ["🍐","Vilmoskörte","1 kg","549 Ft/kg","549 Ft"],
+    ["🍆","Padlizsán","500 g","998 Ft/kg","499 Ft"],
+    ["🥒","Coctail uborka","300 g","1663 Ft/kg","499 Ft"],
+  ]},
+];
+
+document.getElementById('carousels').innerHTML = carouselData.map(sec => `
+  <section class="mx-auto mb-10 max-w-[1760px] px-[3%] xl:px-10">
+    <div class="mb-3 flex items-center justify-between">
+      <h2 class="text-2xl font-bold">${sec.title}</h2>
+      <a href="#" class="text-sm font-semibold text-accent">Több</a>
+    </div>
+    <div class="flex gap-3 overflow-x-auto pb-2 noscroll">
+      ${sec.items.map(([emoji,name,unit,unitPrice,price]) => `
+        <div class="flex w-[220px] shrink-0 flex-col rounded-xl bg-card p-3">
+          <div class="mb-2 flex h-24 items-center justify-center text-5xl">${emoji}</div>
+          <p class="line-clamp-2 min-h-[40px] text-sm font-medium">${name}</p>
+          <p class="mt-1 text-xs text-muted">${unit}</p>
+          <p class="text-xs text-muted">${unitPrice}</p>
+          <div class="mt-2 flex items-center justify-between">
+            <span class="text-lg font-bold">${price}</span>
+            <button class="flex size-8 items-center justify-center rounded-full bg-primary text-white">+</button>
+          </div>
+        </div>`).join('')}
+    </div>
+  </section>`).join('');
+</script>
+
+</body>
+</html>
