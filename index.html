@@ -44,9 +44,9 @@
   </div>
   <div class="flex flex-wrap items-center justify-center gap-5 bg-primary px-4 py-1.5 text-xs font-medium text-white">
     <span class="font-bold">Xtra</span>
-    <span>🚚 Mindig ingyenes kiszállítás</span>
+    <span>🚚 Ingyenes kiszállítás 12 000 Ft felett</span>
     <span>10% kedvezmény sajátmárkás és BIO termékekre</span>
-    <span>4× kisértékű rendelés (1 Ft-tól)</span>
+    <span>4× kis értékű rendelés (1 Ft-tól)</span>
     <a href="#" class="underline">Próbáld ki az Xtrát!</a>
   </div>
   <div class="flex flex-wrap items-center gap-5 px-6 py-3">
@@ -137,10 +137,30 @@
 </footer>
 
 <script>
-const categories = ["Levélzöldségek","Gyökérzöldségek","Paradicsomfélék","Hagymafélék","Gombák","Fűszernövények","Almafélék","Citrusfélék","Bogyós gyümölcsök","Csonthéjas gyümölcsök","Egzotikus gyümölcsök","Dinnyefélék","Saláták","Bio zöldség","Bio gyümölcs","Előkészített zöldség","Gyümölcslevek","Szezonális válogatás"];
+const categoryIcons = {
+  "Levélzöldségek": "🥬",
+  "Gyökérzöldségek": "🥕",
+  "Paradicsomfélék": "🍅",
+  "Hagymafélék": "🧅",
+  "Gombák": "🍄",
+  "Fűszernövények": "🌿",
+  "Almafélék": "🍎",
+  "Citrusfélék": "🍋",
+  "Bogyós gyümölcsök": "🍓",
+  "Csonthéjas gyümölcsök": "🍑",
+  "Egzotikus gyümölcsök": "🥭",
+  "Dinnyefélék": "🍉",
+  "Saláták": "🥗",
+  "Bio zöldség": "🌱",
+  "Bio gyümölcs": "🍏",
+  "Előkészített zöldség": "🥡",
+  "Gyümölcslevek": "🧃",
+  "Szezonális válogatás": "🧺",
+};
+const categories = Object.keys(categoryIcons);
 document.querySelector('.grid.grid-cols-3').innerHTML = categories.map(c => `
   <a href="#" class="flex flex-col items-center gap-1.5 rounded-xl bg-card p-3 text-center text-xs font-medium hover:bg-accent hover:text-secondary">
-    <span class="flex size-12 items-center justify-center rounded-full bg-secondary text-lg">🥕</span>${c}
+    <span class="flex size-12 items-center justify-center rounded-full bg-secondary text-lg">${categoryIcons[c]}</span>${c}
   </a>`).join('');
 
 const carouselData = [
@@ -174,7 +194,7 @@ const carouselData = [
     ["🍈","Sárgadinnye","kb. 1.5 kg","499 Ft/kg","749 Ft"],
     ["🍐","Vilmoskörte","1 kg","549 Ft/kg","549 Ft"],
     ["🍆","Padlizsán","500 g","998 Ft/kg","499 Ft"],
-    ["🥒","Coctail uborka","300 g","1663 Ft/kg","499 Ft"],
+    ["🥒","Koktéluborka","300 g","1663 Ft/kg","499 Ft"],
   ]},
 ];
 
