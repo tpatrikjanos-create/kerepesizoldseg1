@@ -38,40 +38,44 @@
 
 <!-- HEADER -->
 <div class="sticky top-0 z-50 bg-black">
-  <div class="flex items-center justify-between gap-4 bg-card px-6 py-3 text-sm">
+  <div class="hidden items-center justify-between gap-4 bg-card px-6 py-3 text-sm sm:flex">
     <p class="max-w-[900px]">Minden nap friss árut hozunk a helyi termelőktől – nézd meg a mai szezonális válogatásunkat!</p>
     <button class="shrink-0 rounded-full bg-foreground px-4 py-1.5 text-xs font-semibold text-black">Részletek</button>
   </div>
-  <div class="flex flex-wrap items-center justify-center gap-5 bg-primary px-4 py-1.5 text-xs font-medium text-white">
+  <div class="noscroll flex items-center gap-4 overflow-x-auto whitespace-nowrap bg-primary px-4 py-1.5 text-xs font-medium text-white sm:flex-wrap sm:justify-center sm:gap-5 sm:overflow-visible sm:whitespace-normal">
     <span class="font-bold">Xtra</span>
     <span>🚚 Ingyenes kiszállítás 12 000 Ft felett</span>
     <span>10% kedvezmény sajátmárkás és BIO termékekre</span>
     <span>4× kis értékű rendelés (1 Ft-tól)</span>
     <a href="#" class="underline">Próbáld ki az Xtrát!</a>
   </div>
-  <div class="flex flex-wrap items-center gap-5 px-6 py-3">
+  <div class="flex flex-wrap items-center gap-3 px-4 py-3 sm:gap-5 sm:px-6">
     <a href="#" class="flex items-center gap-1 text-xl font-extrabold text-primary">Kerepesi <span class="text-xs font-normal text-muted">Zöldség</span></a>
-    <button class="flex items-center gap-1.5 rounded-lg border border-white/10 px-3 py-1.5 text-sm">
+    <button class="hidden items-center gap-1.5 rounded-lg border border-white/10 px-3 py-1.5 text-sm md:flex">
       <span>🚚</span>
       <span class="flex flex-col text-left leading-tight">
         <span class="text-muted">Kínálatunk ide: Budapest K...</span>
         <span class="font-semibold text-accent">Pontos cím megadása</span>
       </span>
     </button>
-    <form class="flex flex-1 max-w-[640px] items-stretch min-w-[200px]">
+    <div class="ml-auto flex items-center gap-1 sm:hidden">
+      <button class="flex size-10 items-center justify-center text-lg" aria-label="Bejelentkezés">👤</button>
+      <button class="flex size-10 items-center justify-center text-lg" aria-label="Kosár">🛒</button>
+    </div>
+    <form class="order-last flex w-full items-stretch sm:order-none sm:w-auto sm:flex-1 sm:min-w-[200px] sm:max-w-[640px]">
       <input type="search" placeholder="Név, kategória vagy recept keresése" class="h-10 flex-1 rounded-l-lg border border-white/10 bg-black px-4 text-sm placeholder:text-muted focus:outline-none" />
       <button type="button" class="flex h-10 w-12 items-center justify-center rounded-r-lg bg-accent text-secondary">🔍</button>
     </form>
-    <button class="flex items-center gap-1 text-sm">🇭🇺</button>
-    <button class="flex items-center gap-1.5 rounded-full bg-card px-4 py-2 text-sm font-medium">👤 Bejelentkezés</button>
-    <button class="flex items-center gap-1.5 text-sm font-medium">🛒 Kosár</button>
+    <button class="hidden items-center gap-1 text-sm lg:flex">🇭🇺</button>
+    <button class="hidden items-center gap-1.5 rounded-full bg-card px-4 py-2 text-sm font-medium sm:flex">👤 Bejelentkezés</button>
+    <button class="hidden items-center gap-1.5 text-sm font-medium sm:flex">🛒 Kosár</button>
   </div>
-  <nav class="flex flex-wrap items-center gap-5 px-6 pb-3 text-sm font-medium">
-    <a href="#" class="rounded-full bg-primary px-4 py-1.5 text-white">Zöldségek</a>
-    <a href="#" class="hover:text-accent">Gyümölcsök</a>
-    <a href="#" class="hover:text-accent">Szezonális válogatás</a>
-    <a href="#" class="hover:text-accent">Bio zöldség-gyümölcs</a>
-    <a href="#" class="hover:text-accent">Receptek</a>
+  <nav class="noscroll flex items-center gap-4 overflow-x-auto whitespace-nowrap px-6 pb-3 text-sm font-medium sm:flex-wrap sm:gap-5 sm:overflow-visible sm:whitespace-normal">
+    <a href="#" class="shrink-0 rounded-full bg-primary px-4 py-1.5 text-white">Zöldségek</a>
+    <a href="#" class="shrink-0 hover:text-accent">Gyümölcsök</a>
+    <a href="#" class="shrink-0 hover:text-accent">Szezonális válogatás</a>
+    <a href="#" class="shrink-0 hover:text-accent">Bio zöldség-gyümölcs</a>
+    <a href="#" class="shrink-0 hover:text-accent">Receptek</a>
   </nav>
 </div>
 
